@@ -1,0 +1,130 @@
+
+/* CSS pre-processing by {less}. http://lesscss.org/
+***************************************************/
+
+
+
+/* General syles
+***************************************************/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.site-container {
+  line-height: 1.6em;
+  color: #777;
+  max-width: 1020px;
+  padding: 6vw;
+
+  h1, h2, h3 {
+    font-weight: normal;
+    line-height: 1.2em;
+  }
+
+  a {
+    color: cornflowerblue;
+
+    &.disabled {
+      color: #ccc;
+    }
+  }
+}
+
+.site-header {
+  margin-bottom: 4vw;
+}
+
+.site-navigation { }
+
+.site-navigation-list {
+  padding: 0;
+}
+
+.site-navigation-item {
+  display: inline-block;
+  font-size: 87.5%;
+
+  & + .site-navigation-item {
+    margin-left: 1em;
+  }
+
+  a {
+    color: #111;
+    text-decoration: none;
+
+    &:hover {
+      color: #999;
+    }
+  }
+
+  &.active-link > a {
+    color: #999;
+  }
+
+  &.active-folder > a {
+    color: #999;
+  }
+
+  /* Folder Dropdowns */
+
+  .site-navigation-dropdown {
+    display: none;
+  }
+
+  &:hover > .site-navigation-dropdown {
+    display: inline-block;
+  }
+}
+
+.site-title-heading {
+
+  .site-title-link {
+    color: #111;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
+
+.content-container { }
+
+.site-footer {
+  font-size: 75%;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+
+
+
+/* Homepage
+***************************************************/
+
+body.homepage { }
+
+
+
+/* Blog list
+***************************************************/
+
+body.collection-type-blog.view-list {
+
+  .blog-list-item + .blog-list-item {
+    margin-top: 3vw;
+  }
+}
+
+
+
+/* Break grid and stack blocks on small screens
+***************************************************/
+
+@media screen and (max-width: 640px) {
+  @import 'sqs-grid-breaker';
+}
+
+

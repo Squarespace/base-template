@@ -1,0 +1,67 @@
+
+{.section categoryFilter}
+  <p class="filtered-by">Filtered by Category: {@|safe}</p>
+{.end}
+
+{.section tagFilter}
+  <p class="filtered-by">Filtered by Tag: {@|safe}</p>
+{.end}
+
+{.if authorFilter}
+  <p class="filtered-by">Filtered by Author: {author.displayName}</p>
+{.end}
+
+<!-- item loop -->
+{.repeated section items}
+
+  <article id="post-{id}" class="blog-list-item {@|item-classes}" data-item-id="{id}">
+    <!-- main image (thumbnail) -->
+    {.main-image?}
+      <a href="{fullUrl}" class="main-image content-fill">
+        <img {@|image-meta} />
+      </a>
+    {.end}
+    <!-- post title -->
+    <h1 class="title" data-content-field="title">
+      {.passthrough?}
+        <a href="{sourceUrl}" target="_blank">{title}</a>
+      {.or}
+        <a href="{fullUrl}">{title}</a>
+      {.end}
+    </h1>
+    <!-- excerpt or body -->
+    {.if excerpt}
+      {excerpt}
+      <a class="link" href="{fullUrl}">Read More</a>
+    {.or}
+      {body}
+    {.end}
+  </article>
+
+{.or}
+
+  <!-- no items means no blog posts -->
+  <p><em>No blog posts yet.</em></p>
+
+{.end}
+
+<!-- pagination -->
+{.if pagination}
+  <nav class="blog-list-pagination">
+
+    <!-- newer page -->
+    {.if pagination.prevPage}
+      <a href="{pagination.prevPageUrl}">Newer</a>
+    {.or}
+      <a class="disabled">Newer</a>
+    {.end}
+
+    <!-- older page -->
+    {.if pagination.nextPage}
+      <a href="{pagination.nextPageUrl}">Older</a>
+    {.or}
+      <a class="disabled">Older</a>
+    {.end}
+
+  </nav>
+{.end}

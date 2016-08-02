@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- include system scripts, page meta, and header code injection -->
+    {squarespace-headers}
+  </head>
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+
+    <div class="site-container">
+
+      <header class="site-header">
+        <!-- site navigation -->
+        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+
+        <!-- site title or logo -->
+        {.section website}
+          <h1 class="site-title-heading" data-content-field="site-title">
+            <a href="/" class="site-title-link">{siteTitle}</a>
+          </h1>
+        {.end}
+      </header>
+
+      <!-- cms content injection point -->
+      <main class="content-container" role="main" data-content-field="main-content">
+       {squarespace.main-content}
+      </main>
+
+      <!--Footer with open block field -->
+      <footer class="site-footer">
+        <squarespace:block-field id="footerBlocks" columns="12" />
+      </footer>
+
+    </div>
+
+    <!-- combo and minify scripts when not logged in -->
+    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
+    <!-- other scripts, and footer code injection -->
+    {squarespace-footers}
+
+  </body>
+</html>
