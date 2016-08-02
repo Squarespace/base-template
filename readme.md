@@ -11,9 +11,9 @@ See the [Developer Getting Started](https://developers.squarespace.com/get-start
 
 ### Squarespace Templates
 
-Squarespace websites are each based on a template like this one. Templates contain regular web files like CSS and JavaScript. In addition, Squarespace recognizes a few special file types:
+Each Squarespace website is based on a template like this one. Templates contain regular web files like CSS and JavaScript. In addition, Squarespace recognizes a few special file types:
 
-#### JSON Template Files
+#### JSON-T Template Files
 
 Squarespace template files are written in [JSON Template](https://developers.squarespace.com/what-is-json-t), also known as JSON-T. It is a simple yet expressive template language. JSON-T files have different extensions depending on the type of file, for example `.list`, `.item`, and `.region`.
 
@@ -26,13 +26,13 @@ Template LESS files (.less) are processed through the [LESS](http://lesscss.org/
 Squarespace template files are organized using the following folder structure at the root of your site:
 
 - **assets**: design assets — example: images, fonts and icons
-- **blocks**: JSON-T Partials — navigation.block
+- **blocks**: reusable blocks of JSON-T (AKA partials) — ex: navigation.block
 - **collections**: collection files — [collection].list, [collection].item, [collection].conf
 - **scripts**: Javascript files — site.js
 - **styles**: stylesheet files — styles.css, styles.less
 - [**root**]: sitewide files — site.region, template.conf
 
-### Special Files
+### Essential Files
 
 At the very minimum, your template needs a `.region` file and a `template.conf`.
 
