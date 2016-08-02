@@ -16,13 +16,10 @@ Contains the configuration settings for a collection. There is one configuration
 
 #### Configuration Options
 
-**title**: The name of the collection as it will appear in the "Add New Page" dialog.
-
-**ordering**: The method of ordering for the collection. Available options: chronological, user-orderable, calendar.
-
-**addText**: Specifies the text used in the "add" button in the Squarespace interface. It is also used in empty collection message when a collection does not contain any items.
-
-**acceptTypes**: Specifies the post types allowed in this collection. Available: text, image, video.
+- **title**: The name of the collection as it will appear in the "Add New Page" dialog.
+- **ordering**: The method of ordering for the collection. Available options: chronological, user-orderable, calendar.
+- **addText**: Specifies the text used in the "add" button in the Squarespace interface. It is also used in empty collection message when a collection does not contain any items.
+- **acceptTypes**: Specifies the post types allowed in this collection. Available: text, image, video.
 
 ### Collection List Views (collection.list)
 
