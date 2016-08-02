@@ -3,7 +3,7 @@ Collections
 
 This folder contains collection definitions. Collections are JSON-T templates that determine how data on your site is rendered. Each collection should have a configuration file (`.conf`) and a `.item` and/or `.list` file.
 
-## Collection Configuration (collection.conf)
+### Collection Configuration (collection.conf)
 
 Contains the configuration settings for a collection. There is one configuration file for each collection.
 
@@ -14,7 +14,7 @@ Contains the configuration settings for a collection. There is one configuration
       "acceptTypes" : [ "text" ]
     }
 
-### Configuration Options
+#### Configuration Options
 
 **title**: The name of the collection as it will appear in the "Add New Page" dialog.
 
@@ -24,18 +24,18 @@ Contains the configuration settings for a collection. There is one configuration
 
 **acceptTypes**: Specifies the post types allowed in this collection. Available: text, image, video.
 
-## Collection List Views (collection.list)
+### Collection List Views (collection.list)
 
 This is the default view of every collection and shows all posts in that collection. For example, `blog.list` templates a list of blog posts.
 
 Each `.list` template will have access to the top level `collection` key in its context. This will contain data attributes relevant to the collection. To discover those attributes, visit any existing blog or gallery page using the `?format=json-pretty` query parameter. 
 
-## Collection Item Views (collection.item)
+### Collection Item Views (collection.item)
 
 Item views are templates for the individual pages of a collection. Example: blog.item templates a single blog post page. 
 
 Each `.item` template will have access to the `item` key in its context. This will contain data attributes relevant to that item. To discover those attributes, visit any existing blog post or gallery image page using the `?format=json-pretty` query parameter.
 
-## Further Reading
+### Further Reading
 
 For further help, consult the [Collections page](https://developers.squarespace.com/collections/) in the developer docs.

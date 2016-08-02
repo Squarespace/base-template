@@ -11,6 +11,6 @@ All stylesheets added to the template.conf in this way will be compiled and serv
 
 > NOTE: If you add a file named reset.css to the /styles folder it will automatically be added to the top of the site.css file and it should not be listed in the stylesheets variable in the template.conf file.
 
-## Further Reading
+### Further Reading
 
 For further reading, see the [Template Overview documentation](https://developers.squarespace.com/template-overview/). To read about adding attributes to our style editor, see the [Style Editor documentation](https://developers.squarespace.com/style-editor/).
