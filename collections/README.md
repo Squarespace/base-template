@@ -25,13 +25,13 @@ Contains the configuration settings for a collection. There is one configuration
 
 This is the default view of every collection and shows all posts in that collection. For example, `blog.list` templates a list of blog posts.
 
-Each `.list` template will have access to the top level `collection` key in its context. This will contain data attributes relevant to the collection. To discover those attributes, visit any existing blog or gallery page using the `?format=json-pretty` query parameter. 
+Each `.list` template will have access to the top level `items` key in its context. This is a list of all the items in the collection. To explore the context for a collection list view, visit any existing blog or gallery page using the `?format=json-pretty` query parameter. (For example, [http://base-template.squarespace.com/blog?format=json-pretty](http://base-template.squarespace.com/blog?format=json-pretty))
 
 ### Collection Item Views (collection.item)
 
 Item views are templates for the individual pages of a collection. Example: blog.item templates a single blog post page. 
 
-Each `.item` template will have access to the `item` key in its context. This will contain data attributes relevant to that item. To discover those attributes, visit any existing blog post or gallery image page using the `?format=json-pretty` query parameter.
+Each `.item` template will have access to the `item` key in its context. This will contain data attributes relevant to that item. To explore the context for a collection item view, visit any existing blog post or gallery image page using the `?format=json-pretty` query parameter. 
 
 ### Further Reading
 
