@@ -1,7 +1,7 @@
 Collections
 -----------
 
-This folder contains collection definitions. Collections are JSON-T templates that determine how data on your site is rendered. Each collection should have a configuration file (`.conf`) and a `.item` and/or `.list` file.
+This folder contains collection definitions. Collections allow you to group together a set of pages, like a gallery, blog or album. Collections are JSON-T templates that determine how data on your site is rendered. Each collection should have a configuration file (`.conf`) and a `.item` and/or `.list` file.
 
 ### Collection Configuration (collection.conf)
 
