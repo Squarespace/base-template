@@ -1,9 +1,9 @@
 Base Template
 ------------------------------
 
-The default template for developers getting started with a project on Squarespace. This is a minimal template. No tweaks, no web fonts, no static assets, no static pages, no system collections, no collection features, no modules at all.
+A minimal template for developers getting started with Squarespace, using developer mode. No tweaks, no web fonts, no static assets, no static pages, no system collections, no collection features, no modules at all.
 
-Just the basics.
+For more information about the Squarespace Developer Platform see [developers.squarespace.com](http://developers.squarespace.com).
 
 ### Usage
 
