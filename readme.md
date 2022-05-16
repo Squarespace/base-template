@@ -7,7 +7,7 @@ For more information about the Squarespace Developer Platform see [developers.sq
 
 ### Usage
 
-See the [Developer Getting Started](https://developers.squarespace.com/getting-started) page for an step-by-step guide for getting started with the Squaresapce Developer Platform. You can create a new website using this template by visiting [base-template.squarespace.com](http://base-template.squarespace.com) and clicking the "Create a Site Like This" button. This template is also available on [GitHub](https://github.com/Squarespace/base-template).
+See the [Developer Getting Started](https://developers.squarespace.com/quick-start) page for an step-by-step guide for getting started with the Squaresapce Developer Platform. You can create a new website using this template by visiting [base-template.squarespace.com](http://base-template.squarespace.com) and clicking the "Create a Site Like This" button. This template is also available on [GitHub](https://github.com/Squarespace/base-template).
 
 ### Squarespace Templates
 
